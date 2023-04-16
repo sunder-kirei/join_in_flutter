@@ -53,6 +53,10 @@ class _AuthScreenState extends State<AuthScreen> {
     setState(() {
       isLoading = true;
     });
+    FirebaseAuth.instance.signInWithEmailAndPassword(
+      email: email!,
+      password: password!,
+    );
     setState(() {
       isLoading = false;
     });
@@ -81,7 +85,7 @@ class _AuthScreenState extends State<AuthScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        isLogin ? "Welocome Back" : "Welcome to JoinIN!",
+                        isLogin ? "Welcome Back" : "Welcome to JoinIN!",
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
                               fontSize: 24,
                               fontWeight: FontWeight.w700,
@@ -158,6 +162,10 @@ class _AuthScreenState extends State<AuthScreen> {
                         child: TextButton(
                           onPressed: () {},
                           child: const Text("Forgot Password?"),
+                          style: TextButton.styleFrom(
+                            foregroundColor:
+                                Theme.of(context).colorScheme.primary,
+                          ),
                         ),
                       ),
                       const SizedBox(height: 10),
@@ -190,6 +198,10 @@ class _AuthScreenState extends State<AuthScreen> {
                                 isLogin = !isLogin;
                               });
                             },
+                            style: TextButton.styleFrom(
+                              foregroundColor:
+                                  Theme.of(context).colorScheme.primary,
+                            ),
                             child: Text(isLogin ? "Sign Up" : "Login"),
                           ),
                         ],
