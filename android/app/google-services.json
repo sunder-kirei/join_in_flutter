@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "152072139327",
+    "project_id": "clubhouse-clone-422c4",
+    "storage_bucket": "clubhouse-clone-422c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152072139327:android:948a364a4c9674571d3e8a",
+        "android_client_info": {
+          "package_name": "com.example.clubhouse_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152072139327-0qeijc7uf4dfqpfa41vamkvo66vpfgnm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAplb29NTCwpiV5f2HpqAsFBetj5Q-sgng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152072139327-0qeijc7uf4dfqpfa41vamkvo66vpfgnm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
